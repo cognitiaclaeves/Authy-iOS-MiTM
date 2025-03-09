@@ -24,6 +24,9 @@ At this point, you have completed the process of setting up mitmproxy to capture
 > [!NOTE]
 > In order for this to work, you must have your Authy tokens synced to the cloud and you must have a backup password set. It is recommended to dump tokens with a secondary device in case something goes wrong.
 
+> [!WARNING]
+> If you're only using Authy on a single device, don't forget to [enable Authy multi-device](https://help.twilio.com/articles/19753646900379-Enable-or-Disable-Authy-Multi-Device) before logging out. If you don't, you won't be able to login back into your account and you will have to wait 24 hours for Twilio to recover it.
+
 The first step in dumping tokens is to sign out of the Authy app on your device. Unfortuntely, Twilio did not implement a "sign out" feature in the app, so you must delete and reinstall the Authy app from the App Store if you are already signed in. With the proxy connected, sign back in to the app normally (enter your phone number and then authenticate via SMS/phone call/existing device), and then stop once the app asks you for your backup password.
 
 > [!NOTE]
